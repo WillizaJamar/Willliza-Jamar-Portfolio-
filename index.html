@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Williza Jamar | Portfolio</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Williza Jamar</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+```
+<!-- HOME -->
+<section id="home" class="section active">
+    <div class="home-wrap">
+        <img src="27d47019-1d56-4107-b999-b94b8b45afc6.jpg" alt="Williza Jamar" class="home-photo">
+        <h2 class="home-title">Hello, I'm Williza Jamar</h2>
+        <h3 class="home-desc">
+            <span class="bold">A BSIT student</span> who loves <span class="bold">art, drawing, and editing.</span> I’m passionate about combining technology and creativity to express ideas beautifully.
+        </h3>
+        <div class="contact-social home-socials">
+            <a href="https://facebook.com/williza.jamar.5" target="_blank" title="Facebook">
+                <img src="Facebook_Logo_Primary.png" alt="Facebook" class="social-icon"/>
+            </a>
+            <a href="https://linkedin.com/in/your-linkedin-url" target="_blank" title="LinkedIn">
+                <img src="LI-In-Bug.png" alt="LinkedIn" class="social-icon"/>
+            </a>
+            <a href="https://instagram.com/rhien_8" target="_blank" title="Instagram">
+                <img src="Instagram_Glyph_Gradient.png" alt="Instagram" class="social-icon"/>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            Hi! <strong>I'm Williza Jamar</strong>, a passionate <strong>BSIT student at Bukidnon State University</strong> who loves blending creativity and technology.
+            I enjoy expressing my ideas through digital and traditional drawings, photo editing, and exploring new design tools to bring imagination to life.
+            My goal is to inspire others, turning creative ideas into meaningful designs that connect with people.
+        </p>
+        <div class="cv-wrap">
+            <a href="resume.pdf" class="cv-btn" download>Download CV</a>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+    <h2 class="edu-title">Education</h2>
+    <div class="education-cards">
+        <div class="education-card">
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p>Bukidnon State University,<br> Malaybalay City, Bukidnon</p>
+            <span class="year">2023 - Present</span>
+        </div>
+        <div class="education-card">
+            <h3>Senior High School (STEM)</h3>
+            <p>Casisang National High School,<br> Bukidnon</p>
+            <span class="year">2021 - 2023</span>
+        </div>
+        <div class="education-card">
+            <h3>Junior High School</h3>
+            <p>San Nicolas National High School,<br> Don Carlos, Bukidnon</p>
+            <span class="year">2017 - 2021</span>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-cards">
+        <div class="skills-card">
+            <h3>🎨 Drawing</h3>
+            <p>I create expressive and meaningful drawings, blending creativity with emotion.</p>
+        </div>
+        <div class="skills-card">
+            <h3>🖼️ Photo Editing</h3>
+            <p>I edit photos to enhance beauty, color, and mood using digital tools.</p>
+        </div>
+        <div class="skills-card">
+            <h3>💻 IT Knowledge</h3>
+            <p>As a BSIT student, I have a foundation in web design, programming, and digital tools.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+    <h2 class="works-title">My Works</h2>
+    <p class="works-desc">Here are some of my favorite creations — from sketches to edited images.</p>
+    <div class="portfolio-gallery-cards">
+        <div class="portfolio-gallery-card" onclick="openGallery('sketch')">
+            <div class="portfolio-gallery-cover" style="background-image:url('art 1.jpg');">
+                <button class="portfolio-gallery-btn">View Sketches</button>
+            </div>
+            <div class="portfolio-gallery-body">
+                <h3>Sketches</h3>
+                <p>Explore my favorite sketches, line work, and expressive art.</p>
+            </div>
+        </div>
+        <div class="portfolio-gallery-card" onclick="openGallery('edit')">
+            <div class="portfolio-gallery-cover" style="background-image:url('Edit 1.jpg');">
+                <button class="portfolio-gallery-btn">View Edits</button>
+            </div>
+            <div class="portfolio-gallery-body">
+                <h3>Photo Edits</h3>
+                <p>Enjoy my creative photo edits with unique color and feeling.</p>
+            </div>
+        </div>
+    </div>
+    <div id="gallery-popup" class="gallery-popup">
+        <span class="gallery-close" onclick="closeGallery()">&times;</span>
+        <div id="gallery-photos"></div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="contact-card">
+        <div class="contact-info">
+            <h2>Let's Connect</h2>
+            <p>Feel free to reach out for collaborations, questions, or just to say hi!</p>
+            <ul>
+                <li><span class="contact-icon phone"></span> <b>Phone:</b> <a href="tel:+63924908007">+63 924908007</a></li>
+                <li><span class="contact-icon mail"></span> <b>Email:</b> <a href="mailto:willizajamar18@gmail.com">willizajamar18@gmail.com</a></li>
+                <li><span class="contact-icon address"></span> <b>Location:</b> Bukidnon, Philippines</li>
+            </ul>
+        </div>
+        <form class="contact-form" autocomplete="off">
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="animated">Send Message</button>
+        </form>
+    </div>
+    <div class="contact-social home-socials">
+        <a href="https://facebook.com/williza.jamar.5" target="_blank" title="Facebook">
+            <img src="Facebook_Logo_Primary.png" alt="Facebook" class="social-icon"/>
+        </a>
+        <a href="https://linkedin.com/in/your-linkedin-url" target="_blank" title="LinkedIn">
+            <img src="LI-In-Bug.png" alt="LinkedIn" class="social-icon"/>
+        </a>
+        <a href="https://instagram.com/rhien_8" target="_blank" title="Instagram">
+            <img src="Instagram_Glyph_Gradient.png" alt="Instagram" class="social-icon"/>
+        </a>
+    </div>
+</section>
+
+<!-- Footer (single, at the bottom) -->
+<footer>
+    <div class="footer-bg">
+        <div class="footer-content">
+            <div class="footer-name">Williza Jamar</div>
+            <div class="footer-copyright">
+                © 2025 Williza Jamar | All rights reserved
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating Chatbot UI -->
+<div id="chatbot" class="chatbot">
+    <div class="chatbot-header">
+        <span>ChatBot</span>
+        <span class="chatbot-close" title="Close">&times;</span>
+    </div>
+    <div class="chatbot-body">
+        <div class="chatbot-message">Hello! I'm Williza's AI assistant. How can I help you today?</div>
+        <div class="chatbot-buttons">
+            <button>Show me your work</button>
+            <button>Tell me a fun fact</button>
+            <button>How can I contact you?</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
