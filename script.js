@@ -13,24 +13,45 @@ navLinks.forEach(link => {
 });
 
 // PORTFOLIO POPUP
-const sketchPhotos = ["art 1.jpg","art2.jpg","art 3.jpg","art 4.jpg","art 5.jpg","art 6.jpg"];
-const editPhotos = ["Edit 1.jpg","Edit 2.jpg"];
+const sketchPhotos = [
+    "art 1.jpg","art2.jpg","art 3.jpg","art 4.jpg","art 5.jpg","art 6.jpg"
+];
+
+const editPhotos = [
+    "Edit 1.jpg","Edit 2.jpg","Edit 3.jpg","Edit 4.jpg","Edit 5.jpg"
+];
+
+const photoPhotos = [
+    "photo 1.jpg","photo 2.jpg","photo 3.jpg","photo 4.jpg","photo 5.jpg"
+];
+
 function openGallery(type) {
     const popup = document.getElementById('gallery-popup');
     const gallery = document.getElementById('gallery-photos');
     gallery.innerHTML = '';
-    const images = (type === 'sketch') ? sketchPhotos : editPhotos;
+
+    let images = [];
+
+    if (type === 'sketch') {
+        images = sketchPhotos;
+    } else if (type === 'edit') {
+        images = editPhotos;
+    } else if (type === 'photo') {
+        images = photoPhotos;
+    }
+
     images.forEach(img => {
         const imageEl = document.createElement('img');
         imageEl.src = img;
         gallery.appendChild(imageEl);
     });
+
     popup.style.display = 'block';
 }
+
 function closeGallery() {
     document.getElementById('gallery-popup').style.display = 'none';
 }
-
 // CHATBOT LOGIC
 const chatbot = document.getElementById('chatbot');
 const closeBtn = document.querySelector('.chatbot-close');
