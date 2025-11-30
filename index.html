@@ -21,6 +21,7 @@
             </ul>
         </nav>
     </header>
+
 <!-- HOME -->
 <section id="home" class="section active">
     <div class="home-wrap">
@@ -53,7 +54,7 @@
             My goal is to inspire others, turning creative ideas into meaningful designs that connect with people.
         </p>
         <div class="cv-wrap">
-            <a href="resume.pdf" class="cv-btn" download>Download CV</a>
+            <a href="WILLIZA JAMAR - RESUME_20250804_153504_0000.pdf" class="cv-btn" download>Download CV</a>
         </div>
     </div>
 </section>
@@ -103,7 +104,11 @@
 <section id="portfolio" class="section">
     <h2 class="works-title">My Works</h2>
     <p class="works-desc">Here are some of my favorite creations — from sketches to edited images.</p>
+
+    <!-- 3 CARDS IN ONE LINE -->
     <div class="portfolio-gallery-cards">
+
+        <!-- SKETCHES -->
         <div class="portfolio-gallery-card" onclick="openGallery('sketch')">
             <div class="portfolio-gallery-cover" style="background-image:url('art 1.jpg');">
                 <button class="portfolio-gallery-btn">View Sketches</button>
@@ -113,6 +118,8 @@
                 <p>Explore my favorite sketches, line work, and expressive art.</p>
             </div>
         </div>
+
+        <!-- PHOTO EDITS -->
         <div class="portfolio-gallery-card" onclick="openGallery('edit')">
             <div class="portfolio-gallery-cover" style="background-image:url('Edit 1.jpg');">
                 <button class="portfolio-gallery-btn">View Edits</button>
@@ -122,7 +129,28 @@
                 <p>Enjoy my creative photo edits with unique color and feeling.</p>
             </div>
         </div>
+
+        <!-- PHOTOGRAPHY -->
+        <div class="portfolio-gallery-card" onclick="openGallery('photo')">
+            <div class="portfolio-gallery-cover" style="background-image:url('photo\ 1.jpg');">
+                <button class="portfolio-gallery-btn">View Photography</button>
+            </div>
+            <div class="portfolio-gallery-body">
+                <h3>Photography</h3>
+                <p>A collection of my captured moments and creative shots.</p>
+            </div>
+        </div>
+
     </div>
+
+    <!-- SEPARATE ARTWORK LINK (FLIPBOOK) -->
+    <div class="portfolio-extra">
+        <a href="https://online.fliphtml5.com/hiumq/gvfc/" target="_blank">
+            📖 View My Digital Flipbook Artwork
+        </a>
+    </div>
+
+    <!-- GALLERY POPUP -->
     <div id="gallery-popup" class="gallery-popup">
         <span class="gallery-close" onclick="closeGallery()">&times;</span>
         <div id="gallery-photos"></div>
@@ -194,8 +222,6 @@
 
 <script src="script.js"></script>
 
+
 </body>
 </html>
-
-
-
