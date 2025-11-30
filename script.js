@@ -18,7 +18,7 @@ const sketchPhotos = [
 ];
 
 const editPhotos = [
-    "Edit 1.jpg","Edit 2.jpg","Edit 3.jpg","Edit 4.jpg","Edit 5.jpg"
+    "Edit 1.jpg","Edit 2.jpg","edit 3.jpg","edit 4.jpg","edit 5.jpg"
 ];
 
 const photoPhotos = [
@@ -100,3 +100,4 @@ chatbotButtons.forEach(btn => {
         }
     });
 });
+
